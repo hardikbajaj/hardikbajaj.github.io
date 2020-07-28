@@ -7,11 +7,9 @@
  * 
  * Copyright 2012, Codrops
  * http://www.codrops.com
-
  */
 
-;(
- function( $, window, undefined ) {
+;( function( $, window, undefined ) {
 	
 	'use strict';
 

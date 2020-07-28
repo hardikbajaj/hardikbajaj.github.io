@@ -1,7 +1,7 @@
 .sb-container {
 	position: relative;
-	width: 150px;
-	height: 400px;
+	width: 150px;   /*150*/  /*100*/
+	height: 400px;  /*400*/  /*250*/
 	margin: 30px auto 0 auto;
 }
 
@@ -9,9 +9,9 @@
     position: absolute;
 	top: 0;
 	left: 0; 
-	width: 130px;
+	width: 130px;    /*130*/ /*90*/
 	background: #fff;
-	height: 400px;
+	height: 400px;     /*400*/  /*240*/
 	border-radius: 5px;
 	cursor: pointer;
 	text-align: center;

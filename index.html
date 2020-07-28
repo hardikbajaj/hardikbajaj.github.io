@@ -71,7 +71,7 @@
     </nav>
 
   </div>
-  <div class="container-fluid" style="padding-top: 125px;">
+  <div class="container-fluid" style="padding: 125px 0 0 0;">
    <!--  THE SLIDER -->
     <div class="wrapper animated tada delay-1s slide">
 
@@ -161,7 +161,7 @@
       </div>
       <!-- SLIDER ENDS -->
 
-      <!-- INTRO TExt -->
+      <!-- INTRO Text -->
       <section class="rw-wrapper text-center">
         <h2 class="rw-sentence text-center">
           <span>Welcome to i-</span>
@@ -202,7 +202,8 @@
       <h2 class="rw-sentence-IE">We design &amp; develop beautiful websites that captivate your users</h2> -->
       <!-- END -->
       <!-- SWATCH BOOK -->
-    <div class="container-fluid" style="padding: 20px 0 0 0;">
+
+    <div class="d-flex container-fluid overflow-auto" style="padding: 20px 0 150px 0;">
       <div id="sb-container" class="sb-container">
         
           <div>
@@ -342,7 +343,9 @@ CGI
               },
               orientation : 'r',
               cuboidsRandom : true,
-              disperseFactor : 30
+              disperseFactor : 30,
+              maxCuboidsCount : 7,
+              interval : 2500
             } ),
             
             init = function() {
@@ -386,7 +389,8 @@ CGI
       
         $( '#sb-container' ).swatchbook({
           angleInc : 20,
-          center:4
+          center:4,
+          neighbor:12
         });
         
       
