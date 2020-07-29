@@ -1,7 +1,7 @@
 .rw-wrapper{
 	width: 80%;
 	position: relative;
-	margin: 0px auto 0 20px;
+/* 	margin: 0px auto 0 20px; */
 	font-family: 'Bree Serif';
 	padding: 10px;
 }
@@ -77,6 +77,12 @@
 @media screen and (max-width: 768px){
 	.rw-sentence { font-size: 18px; }
 }
-@media screen and (max-width: 320px){
+/* @media screen and (max-width: 320px){
 	.rw-sentence { font-size: 9px; }
+} remember this shit...*/
+@media screen and (max-width: 397px){
+	.rw-sentence { font-size: 9px; }
+}
+@media screen and (max-width: 209px){
+	.rw-sentence { font-size: 5px; }
 }
