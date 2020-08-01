@@ -13,7 +13,7 @@ function scrollFunction() {
     if(document.body.scrollTop > 110 || document.documentElement.scrollTop > 110){
     // document.getElementsByClassName("navbar").style.height = "70px";
     // document.getElementsByClassName("navbar").style.background-color = "orange";
-    
+      document.getElementById("logoimg").style.height = "80px";
       document.getElementById("navv").style.height = "70px";
       document.getElementById("navv").style.backgroundColor="black";
       // document.getElementById("navbarNav").style.backgroundColor="black";
@@ -27,6 +27,7 @@ function scrollFunction() {
   else {
     document.getElementById("Bar").style.height = "0px";
     document.getElementById("navv").style.height = "120px";
+    document.getElementById("logoimg").style.height = "120px";
     document.getElementById("navv").style.backgroundColor="transparent";
     // document.getElementById("navbarNav").style.backgroundColor="transparent";
     if(document.querySelector(".navbar .show"))
@@ -34,3 +35,4 @@ function scrollFunction() {
   }
 
 }
+

@@ -81,7 +81,10 @@
 	.rw-sentence { font-size: 9px; }
 } remember this shit...*/
 @media screen and (max-width: 397px){
-	.rw-sentence { font-size: 9px; }
+	.rw-sentence { font-size: 15px; }
+}
+@media screen and (max-width: 340px){
+	.rw-sentence { font-size: 10px; }
 }
 @media screen and (max-width: 209px){
 	.rw-sentence { font-size: 5px; }
