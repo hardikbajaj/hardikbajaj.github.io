@@ -82,10 +82,211 @@
 } remember this shit...*/
 @media screen and (max-width: 397px){
 	.rw-sentence { font-size: 15px; }
+	
 }
 @media screen and (max-width: 340px){
 	.rw-sentence { font-size: 10px; }
 }
 @media screen and (max-width: 209px){
 	.rw-sentence { font-size: 5px; }
+}
+
+@media screen and (max-width: 768px){
+	#tagline { font-size: 18px; }
+}
+
+@media screen and (max-width: 397px){
+	#tagline {font-size: 15px;}	
+}
+
+/*THE ADVERTISEMENT BAR*/
+
+#contwrap{
+	font-family: 'Open Sans Condensed','Arial Narrow', serif;
+	font-weight: 400;
+	font-size: 10px;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	overflow-x: hidden;
+	overflow-y: hidden;
+/*	background: transparent url(../../img/bg2.png) no-repeat top right;
+	background-attachment: relative;
+	float: right;*/
+}
+.rw-wrap{
+	width: 100%;
+	position: relative;
+	margin: 30px auto 0 auto;
+	padding: 0px;
+}
+.rw-sent{
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-shadow: 0 0 0 rgba(0,0,0,0.0001);
+}
+.rw-sent span{
+	color: #000;
+	white-space: nowrap;
+}
+.rw-sent > span:first-child{
+	display: block;
+	text-indent: 5px;
+	font-size: 145%;
+}
+.rw-word{
+	width: 100%;
+	height: 100px;
+	-webkit-perspective: 800px;
+	perspective: 800px;
+}
+.rw-word span{
+	position: absolute;
+	width: 100%;
+	opacity: 0;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.rw-word-1 span{
+	font-size: 500%;
+	line-height: 82%;
+	-webkit-animation: rotateWordsFirst 18s linear infinite 0s;
+	-ms-animation: rotateWordsFirst 18s linear infinite 0s;
+	animation: rotateWordsFirst 18s linear infinite 0s;
+}
+.rw-word-2 span{
+	font-size: 300%;
+	font-style: italic;
+	text-indent: 5px;
+	line-height: 90%;
+	color: #da0a0a;	
+	-webkit-animation: rotateWordsSecond 18s ease-in infinite 0s;
+	-ms-animation: rotateWordsSecond 18s ease-in infinite 0s;
+	animation: rotateWordsSecond 18s ease-in infinite 0s;
+}
+.rw-word span:nth-child(2) { 
+    -webkit-animation-delay: 3s; 
+	-ms-animation-delay: 3s; 
+	animation-delay: 3s; 
+}
+.rw-word span:nth-child(3) { 
+    -webkit-animation-delay: 6s; 
+	-ms-animation-delay: 6s; 
+	animation-delay: 6s; 
+}
+.rw-word span:nth-child(4) { 
+    -webkit-animation-delay: 9s; 
+	-ms-animation-delay: 9s; 
+	animation-delay: 9s; 
+}
+.rw-word span:nth-child(5) { 
+    -webkit-animation-delay: 12s; 
+	-ms-animation-delay: 12s; 
+	animation-delay: 12s; 
+}
+.rw-word span:nth-child(6) { 
+    -webkit-animation-delay: 15s; 
+	-ms-animation-delay: 15s; 
+	animation-delay: 15s; 
+}
+@-webkit-keyframes rotateWordsFirst {
+    0% { opacity: 0; -webkit-animation-timing-function: ease-in; width: 0px;}
+    5% { opacity: 1; -webkit-animation-timing-function: ease-out; width: 100%;}
+    17% { opacity: 1; }
+    20% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes rotateWordsFirst {
+    0% { opacity: 0; -ms-animation-timing-function: ease-in; width: 0px;}
+    5% { opacity: 1; -ms-animation-timing-function: ease-out; width: 100%;}
+    17% { opacity: 1; }
+    20% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes rotateWordsFirst {
+    0% { opacity: 0; -webkit-animation-timing-function: ease-in; animation-timing-function: ease-in; width: 0px;}
+    5% { opacity: 1; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; width: 100%;}
+    17% { opacity: 1; }
+    20% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes rotateWordsSecond {
+    0% { opacity: 0; -webkit-transform: translateZ(600px) translateX(200px);}
+    8% { opacity: 1; -webkit-transform: translateZ(0px) translateX(0px);}
+    17% { opacity: 1; }
+    25% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes rotateWordsSecond {
+    0% { opacity: 0; -ms-transform: translateZ(600px) translateX(200px);}
+    8% { opacity: 1; -ms-transform: translateZ(0px) translateX(0px);}
+    17% { opacity: 1; }
+    25% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes rotateWordsSecond {
+    0% { opacity: 0; -webkit-transform: translateZ(600px) translateX(200px); transform: translateZ(600px) translateX(200px);}
+    8% { opacity: 1; -webkit-transform: translateZ(0px) translateX(0px); transform: translateZ(0px) translateX(0px);}
+    17% { opacity: 1; }
+    25% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@media screen and (max-width: 1150px){
+	.rw-word{ height: 80px; }
+	.rw-word-1 span{ font-size: 400%; text-indent: 5px;}
+	.rw-word-2 span { font-size: 200%; }
+	.rw-sent > span:first-child{ font-size: 80%;}
+}
+@media screen and (max-width: 1060px){
+	.rw-word{ height: 55px; }
+	.rw-word-1 span{ font-size: 280%; text-indent: 5px;}
+	.rw-word-2 span { font-size: 160%; }
+}
+@media screen and (max-width: 710px){
+	.rw-word{ height: 40px; }
+	.rw-word-1 span{ font-size: 180%; text-indent: 5px;}
+	.rw-word-2 span { font-size: 90%; }
+	.rw-sent > span:first-child{ font-size: 80%;}
+}
+
+
+@media screen and (max-width: 560px){
+	.rw-word{ height: 40px; }
+	.rw-word-1 span{ font-size: 180%; text-indent: 5px;}
+	.rw-word-2 span { font-size: 90%; }
+	.rw-sent > span:first-child{ font-size: 80%;}
+}
+
+@media screen and (max-width: 468px){
+	.rw-word{ height: 35px; }
+	.rw-word-1 span{ font-size: 160%; text-indent: 5px;}
+	.rw-word-2 span { font-size: 90%; }
+	.rw-sent > span:first-child{ font-size: 60%;}
+}
+
+@media screen and (max-width: 420px){
+	.rw-word{ height: 30px; }
+	.rw-word-1 span{ font-size: 140%; text-indent: 5px;}
+	.rw-word-2 span { font-size: 70%; }
+	.rw-sent > span:first-child{ font-size: 60%;}
+}
+@media screen and (max-width: 377px){
+	.rw-word{ height: 30px; }
+	.rw-word-1 span{ font-size: 120%; text-indent: 5px;}
+	.rw-word-2 span { font-size: 65%; }
+	.rw-sent > span:first-child{ font-size: 60%;}
+}
+@media screen and (max-width: 333px){
+	.rw-word{ height: 22px; }
+	.rw-word-1 span{ font-size: 100%; text-indent: 5px;}
+	.rw-word-2 span { font-size: 50%; }
+	.rw-sent > span:first-child{ font-size: 50%;}
+}
+@media screen and (max-width: 281px){
+	.rw-word{ height: 10px; }
+	.rw-word-1 span{ font-size: 50%; text-indent: 5px;}
+	.rw-word-2 span { font-size: 25%; }
+	.rw-sent > span:first-child{ font-size: 25%;}
 }

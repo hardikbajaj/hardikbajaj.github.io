@@ -48,6 +48,9 @@ body{
   border-radius: 10px;
 
 }
+#tagline{
+  text-align: center;
+}
 #logoimg{
   transition: height 1s;
 }
@@ -402,3 +405,6 @@ nav{
   position: absolute;
 }
 
+#sm{
+  width: 50%;
+}
