@@ -406,5 +406,71 @@ nav{
 }
 
 #sm{
-  width: 50%;
+  
+  text-align: center;
+}
+/*parallax video*/
+/*.ParallaxVideo{ 
+    height: 300px;
+    padding-bottom: 50px;
+    padding-top: 50px; 
+}
+.ParallaxVideo video{ 
+    min-width: 100%;
+    position: fixed;
+    top:0;
+    z-index: -999;
+}
+.ParallaxVideo h1 {
+  color: #fff;
+  font-size: 76px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+#myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+ /* z-index: -999;
+*/
+
+
+#paral{
+background-image: url("../img/happy.jpg");
+
+  /* Set a specific height */
+  height: 20%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#counter{
+  font-family: Times;
+  text-align: center;
+  font-size: 80px;
+  text-shadow: 4px 4px 4px orange;
+}
+#cust{
+  font-family: Times;
+  text-align: center;
+  font-size: 100px;
+  text-shadow: 7px 7px 7px orange;
+}
+/*Beleive*/
+#believe h1{
+  text-align: center;
+  padding-left: 30px;
+  font-size: 50px;
+  text-shadow: 7px 7px 7px black;
+  color: white !important;
+  font-weight: 4px;
+}
+#believe h1 a{
+  color: white;
 }
